@@ -20,7 +20,7 @@
     "build-demo:public": "npm-run-all build:public:data:* build:public:style build:public:script",
     "build:public:style": "node-sass --importer src/public/style/env-importer.js src/public/style/main.scss build/public.css",
     "build:public:script": "browserify src/public/js/main.js -o build/dataviz-finance-gironde-fr-bundle.script -p [minifyify --no-map]",
-    "prepare:plan-de-compte": "plans-de-compte --in data/finances/CA --out data/finances/plansDeCompte",
+    "prepare:plan-de-compte": "plans-de-compte --in data/finances/CA --out public/plansDeCompte",
     "prebuild:public:data:finance-data": "npm run prepare:plan-de-compte",
     "build:public:data:finance-data": "node -r esm tools/make-finance-data.js",
     "prebuild:public:data:m52-strings": "npm run prepare:plan-de-compte",

@@ -415,6 +415,12 @@
                   "formula": "DI∩(C204152∩F93)-(DI∩(C204152∩F93)∩Ann2019)"
                 }
               ]
+            },
+            {
+              "id": "TEST",
+              "name": "Test",
+              "useInAnalysis": true,
+              "formula": "DI∩(C261+C2743)"
             }
           ]
         }

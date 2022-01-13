@@ -20,6 +20,7 @@ import {
 import TopLevel from './components/TopLevel.js';
 
 const SOURCE_FINANCE_DIR = './data/finances/'
+const SOURCE_PLAN_DE_COMPTE_DIR = './public/plansDeCompte/'
 
 function reducer(state, action){
     const {type} = action;
@@ -307,7 +308,7 @@ const natureToChapitreFIP = Promise.all([
     'plan-de-compte-M52-M52-2016.xml',
     'plan-de-compte-M52-M52-2017.xml',
     'plan-de-compte-M52-M52-2018.xml'
-].map(f => fetch(`${SOURCE_FINANCE_DIR}plansDeCompte/${f}`).then(r => r.text())
+].map(f => fetch(`${SOURCE_PLAN_DE_COMPTE_DIR}/${f}`).then(r => r.text())
     .then( str => {
         return (new DOMParser()).parseFromString(str, "text/xml");
     })

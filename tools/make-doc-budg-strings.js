@@ -4,7 +4,7 @@ import {writeFile}  from 'fs-extra';
 import getPlansDeCompte from './shared/getPlansDeCompte.js'
 
 const BUILD_FINANCE_DIR = './build/finances';
-const PLANS_DE_COMPTE_DIR = './data/finances/plansDeCompte';
+const PLANS_DE_COMPTE_DIR = './public/plansDeCompte';
 
 getPlansDeCompte(PLANS_DE_COMPTE_DIR)
 .then(plansDeComptes => {

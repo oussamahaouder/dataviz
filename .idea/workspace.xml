@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f60e7694-097a-4bbd-a112-788b7fd21a46" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/data/finances/CA/CA2015BPAL.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/finances/CA/CA2016BPAL.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/finances/CA/CA2017BPAL.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/finances/CA/CA2018BPAL.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/finances/CA/CA2019BPAL.XML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/finances/CA/CA2020BPAL.XML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/finances/corrections-agregation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/finances/corrections-agregation.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/finances/description-agrégation.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/finances/description-agrégation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/finances/plansDeCompte/plan-de-compte-M52-M52-2014.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/finances/plansDeCompte/plan-de-compte-M52-M52-2015.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/finances/plansDeCompte/plan-de-compte-M52-M52-2016.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/finances/plansDeCompte/plan-de-compte-M52-M52-2017.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/finances/plansDeCompte/plan-de-compte-M52-M52-2018.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/finances/plansDeCompte/plan-de-compte-M52-M52-2020.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/texts/aggregated-atemporal.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/texts/aggregated-atemporal.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/description-agrégation.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/m52-overview/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/m52-overview/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/js/components/screens/ExploreBudget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/components/screens/ExploreBudget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/js/components/screens/FinanceElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/components/screens/FinanceElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/js/components/screens/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/components/screens/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/js/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/js/finance/xmlDocumentToDocumentBudgetaire.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/js/finance/xmlDocumentToDocumentBudgetaire.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/make-doc-budg-strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/make-doc-budg-strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/make-finance-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/make-finance-data.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="cb19bb22bacafcf079ed0295233397334662f2b9" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="23H5WZ4tRjhpU0lM4JMZeZScqgV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/finances" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Users\RSARRY\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\203.7717.59\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Dev\Ville de Bordeaux\dataviz-finances-bordeaux\data\finances" />
+      <recent name="C:\Dev\Ville de Bordeaux\dataviz-finances-bordeaux\data\finances\CA.old" />
+      <recent name="C:\Dev\Ville de Bordeaux\dataviz-finances-bordeaux\data\finances\CA" />
+      <recent name="C:\Dev\Ville de Bordeaux\dataviz-finances-bordeaux\build" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Dev\Ville de Bordeaux\dataviz-finances-bordeaux\public" />
+      <recent name="C:\Dev\Ville de Bordeaux\dataviz-finances-bordeaux\data\finances\CA.old" />
+      <recent name="C:\Dev\Ville de Bordeaux\dataviz-finances-bordeaux\data\finances\CA" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f60e7694-097a-4bbd-a112-788b7fd21a46" name="Default Changelist" comment="" />
+      <created>1641378206663</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641378206663</updated>
+      <workItem from="1641378208995" duration="14735000" />
+      <workItem from="1641460840021" duration="9448000" />
+      <workItem from="1641482189159" duration="25000" />
+      <workItem from="1641482216215" duration="6269000" />
+      <workItem from="1641544382455" duration="1398000" />
+      <workItem from="1641548384413" duration="155000" />
+      <workItem from="1641548555229" duration="6715000" />
+      <workItem from="1641805671177" duration="1997000" />
+      <workItem from="1641823566605" duration="4919000" />
+      <workItem from="1641917010194" duration="1242000" />
+      <workItem from="1641996590382" duration="1226000" />
+      <workItem from="1642066009824" duration="1307000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

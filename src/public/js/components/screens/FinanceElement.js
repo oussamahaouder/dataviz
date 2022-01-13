@@ -389,6 +389,9 @@ export default connect(
                 const rdTotal = contextList[0].total || aggregatedDocumentBudgetaireNodeTotal(contextList[0])
                 const total = c.total || aggregatedDocumentBudgetaireNodeTotal(c)
 
+                console.log(c)
+                console.log(textsById.get(c.id))
+
                 return ({
                     id: c.id,
                     url: c.id !== displayedContentId ? '#!/finance-details/' + c.id : undefined,

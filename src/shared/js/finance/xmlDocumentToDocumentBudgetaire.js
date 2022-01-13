@@ -57,7 +57,7 @@ export default function xmlDocumentToDocumentBudgetaire(doc){
 
                 return Object.assign(
                     {},
-                    r, 
+                    r,
                     { 'MtReal': amount}
                 )
             })

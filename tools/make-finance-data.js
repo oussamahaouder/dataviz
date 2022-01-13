@@ -16,8 +16,9 @@ const corrections = csvStringToCorrections(readFileSync(join(__dirname, '../data
 
 const BUILD_FINANCE_DIR = './build/finances';
 const SOURCE_FINANCE_DIR = './data/finances';
+const SOURCE_PLAN_DE_COMPTE_DIR = './public/plansDeCompte/'
 
-const plansDeComptesP = getPlansDeCompte(join(SOURCE_FINANCE_DIR, 'plansDeCompte'))
+const plansDeComptesP = getPlansDeCompte(SOURCE_PLAN_DE_COMPTE_DIR)
 .then(pdcs => pdcs.map(fromXMLDocument))
 
 
@@ -57,7 +58,7 @@ mkdir(BUILD_FINANCE_DIR)
         }
         return ret;
     })
-    
+
 })
 .then(data => {
     return writeFile(join(BUILD_FINANCE_DIR, 'finance-data.json'), JSON.stringify(data), 'utf-8')

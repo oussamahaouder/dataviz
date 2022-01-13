@@ -29,7 +29,6 @@ import {
     FINANCE_DETAIL_ID_CHANGE,
 } from './constants/actions';
 
-
 import {fonctionLabels} from '../../../build/finances/m52-strings.json';
 
 
@@ -145,12 +144,12 @@ json(urls[FINANCE_DATA])
         documentBudgetaires: documentBudgetaires.map(db => {
             db.rows = new ImmutableSet(db.rows.map(LigneBudgetRecord))
             return DocumentBudgetaire(db)
-        }), 
+        }),
         aggregations
     });
 
-    for(const {Exer} of documentBudgetaires){
-        xml(`https://datalocale.github.io/dataviz-finances-gironde/data/finances/plansDeCompte/plan-de-compte-M52-M52-${Exer}.xml`)
+    for(const {Nomenclature, Exer} of documentBudgetaires){
+        xml(`./public/plansDeCompte/plan-de-compte-${Nomenclature}-${Exer}.xml`)
         .then(fromXMLDocument)
         .then(planDeCompte => {
             store.dispatch({
