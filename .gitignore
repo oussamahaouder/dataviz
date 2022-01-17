@@ -2,8 +2,6 @@ npm-debug.log*
 node_modules
 .npm
 
-*-bundle.js
-
 # temporary
 data/*.pdf
 data/**/*.pdf
