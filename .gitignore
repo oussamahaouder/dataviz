@@ -4,8 +4,6 @@ node_modules
 
 *-bundle.js
 
-build/
-
 # temporary
 data/*.pdf
 data/**/*.pdf
