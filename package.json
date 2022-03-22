@@ -12,6 +12,7 @@
     "start": "serve --cors -p 3000",
     "test": "jest",
     "build-demo": "cross-env NODE_ENV=demo npm-run-all --parallel build-demo:public",
+    "build-dev": "cross-env NODE_ENV=devlopment npm-run-all --parallel build-demo:public",
     "build:m52overview": "npm-run-all build:public:data:m52-strings build:m52overview:script",
     "build:m52overview:script": "browserify src/m52-overview/js/main.js -o build/m52-overview-bundle.js -d",
     "build-preprod": "cross-env GIRONDE_FR_DRUPAL_MEDIA_ID=2459 npm run build-gironde-fr:public",

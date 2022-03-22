@@ -1,4 +1,5 @@
 export const FINANCE_DATA = 'FINANCE_DATA';
+export const PLANS_DE_COMPTE = 'PLANS_DE_COMPTE';
 
 export const AGGREGATED_ATEMPORAL = "AGGREGATED_ATEMPORAL";
 export const AGGREGATED_TEMPORAL = "AGGREGATED_TEMPORAL";
@@ -36,7 +37,10 @@ export const urls = {
         "demo": `/dataviz-finances-gironde/build/finances/finance-data.json`,
         "development": `../build/finances/finance-data.json`,
     }[env],
-
+    [PLANS_DE_COMPTE]: {
+        "demo": `./plansDeCompte`,
+        "development": `./public/plansDeCompte`,
+    }[env],
     [CORRECTIONS_AGGREGATED]: { // now useless since it's used in pre-precessing in tools/make-finance-data.js
         "production": `/media/${GIRONDE_FR_DRUPAL_MEDIA_ID}/field_dataviz_files/14`,
         "demo": `/dataviz-finances-gironde/data/finances/corrections-agregation.csv`,
