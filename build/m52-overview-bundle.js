@@ -1,0 +1,1 @@
+console.error("Error: Cannot find module '../../shared/js/finance/memoized' from 'C:\\Dev\\Ville de Bordeaux\\dataviz-finances-bordeaux\\src\\m52-overview\\js'");

@@ -6,7 +6,7 @@ import { Record, Map as ImmutableMap, List, Set as ImmutableSet } from 'immutabl
 import { csv, xml, json } from 'd3-fetch';
 import page from 'page';
 
-import {urls, FINANCE_DATA, AGGREGATED_ATEMPORAL, AGGREGATED_TEMPORAL} from './constants/resources';
+import {urls, FINANCE_DATA, PLANS_DE_COMPTE, AGGREGATED_ATEMPORAL, AGGREGATED_TEMPORAL} from './constants/resources';
 import reducer from './reducer';
 
 import {LigneBudgetRecord, DocumentBudgetaire} from '../../shared/js/finance/DocBudgDataStructures.js';
@@ -149,7 +149,7 @@ json(urls[FINANCE_DATA])
     });
 
     for(const {Nomenclature, Exer} of documentBudgetaires){
-        xml(`./public/plansDeCompte/plan-de-compte-${Nomenclature}-${Exer}.xml`)
+        xml(`${urls[PLANS_DE_COMPTE]}/plan-de-compte-${Nomenclature}-${Exer}.xml`)
         .then(fromXMLDocument)
         .then(planDeCompte => {
             store.dispatch({
