@@ -1,3 +1,13 @@
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; }
+
 .breadcrumb, #block-gironde-fr-local-tasks {
   max-width: 1280px;
   padding: 0 40px;
@@ -557,7 +567,7 @@
     max-width: 100%; }
     @media screen and (min-width: 950px) {
       .home .appetizers-container {
-        background-image: url("/media/undefined/field_dataviz_image/0");
+        background-image: url("../images/map-optimised.jpg");
         background-color: #BEBC05;
         min-height: 2470px;
         margin-top: 150px; } }
@@ -1012,7 +1022,7 @@ ol.legend-list {
       .focus .top-infos > :nth-child(2) a {
         width: 14em; }
     .focus .top-infos .people-fraction {
-      background-image: url("/media/undefined/field_dataviz_files/1");
+      background-image: url("../images/bonhomme.svg");
       background-size: contain;
       position: relative;
       text-transform: uppercase;
