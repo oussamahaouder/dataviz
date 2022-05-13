@@ -2,6 +2,3 @@ npm-debug.log*
 node_modules
 .npm
 
-# temporary
-data/*.pdf
-data/**/*.pdf
