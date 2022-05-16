@@ -5,1573 +5,414 @@
   "children": [
     {
       "id": "D",
-      "name": "Dépense",
+      "name": "Dépenses",
       "useInAnalysis": true,
       "children": [
         {
-          "id": "F",
-          "name": "Fonctionnement",
+          "id": "DF",
+          "name": "DEPENSES DE FONCTIONNEMENT",
           "useInAnalysis": true,
           "children": [
             {
-              "id": "65",
-              "name": "Autres charges de gestion courante",
+              "id": "DF.1",
+              "name": "• Dépenses de Solidarité par prestations",
               "useInAnalysis": true,
               "children": [
                 {
-                  "id": "651",
-                  "name": "Aides à la personne",
+                  "id": "DF.1.1",
+                  "name": "Frais d’hébergement",
                   "useInAnalysis": true,
                   "children": [
                     {
-                      "id": "6513",
-                      "name": "Bourses, prix et secours",
+                      "id": "DF.1.1.1",
+                      "name": "Personnes handicapées",
                       "useInAnalysis": true,
-                      "formula": "DF∩Ch65∩C6513"
+                      "formula": "DF∩(C652221 ∪ C65242)"
                     },
                     {
-                      "id": "6518",
-                      "name": "Autres (primes, dots)",
+                      "id": "DF.1.1.2",
+                      "name": "Personnes âgées",
                       "useInAnalysis": true,
-                      "formula": "DF∩Ch65∩C6518"
+                      "formula": "DF∩(C652224 ∪ C65243)"
+                    },
+                    {
+                      "id": "DF.1.1.3",
+                      "name": "Enfants",
+                      "useInAnalysis": true,
+                      "formula": "DF∩(C652222+C65223+C6523+C652411+C652415+C652418+C65821+C6132+C6135+C62268+C6234+C6245+C6184+C65228+C652412+C65221+C6336+C64121+C64126+C64128+C6451+C6453+C6454+C6475+C6251+C617+C6227+C6135+C6132+C6232+C6718)∩F51+(C64121+C64126)∩F50+C6358∩F01-C62268∩F51∩Ann2019+C6568∩F51+C611∩F51∩Ann2020-C62268∩F51∩Ann2020-C6568∩F51∩Ann2020-C6358∩F01∩Ann2020+C65888∩F51"
                     }
                   ]
                 },
                 {
-                  "id": "653",
-                  "name": "Indemnités",
+                  "id": "DF.1.2",
+                  "name": "Revenu de Solidarité Active (RSA)",
+                  "useInAnalysis": true,
+                  "formula": "DF∩(C6515+C65171+C65172)"
+                },
+                {
+                  "id": "DF.1.4",
+                  "name": "Allocation Personnalisée d’Autonomie (APA)",
+                  "useInAnalysis": true,
+                  "formula": "DF∩(C651141+C651142+C651143+C651144+C651148)"
+                },
+                {
+                  "id": "DF.1.5",
+                  "name": "Préventions enfants",
+                  "useInAnalysis": true,
+                  "formula": "DF∩(C652416 ∪ C6514)∩F51+C6512∩F51+(C678∩F51∩Ann2019)"
+                },
+                {
+                  "id": "DF.1.6",
+                  "name": "Subventions sociales",
+                  "useInAnalysis": true,
+                  "formula": "DF∩(C65734+C65737+C65738+C65735+C6574)∩(F4 ∪ F5)-C6574∩F58-(C65734+C65738)∩F58-C6574∩F51-C65734∩F51+(C65738∩F58∩Ann2020)"
+                },
+                {
+                  "id": "DF.1.7",
+                  "name": "Diverses dépenses de solidarité",
                   "useInAnalysis": true,
                   "children": [
                     {
-                      "id": "6531",
-                      "name": "Indemnités, frais de mission et de formation des élus",
+                      "id": "DF.1.7.1",
+                      "name": "Divers enfants",
                       "useInAnalysis": true,
-                      "formula": "DF∩Ch65∩C6531"
+                      "formula": "DF∩(C6188+C62878+C654+C6541+C6542+C6568+C673+C6745)∩F51-(C6568∩F51∩(Ann2019+Ann2020))"
+                    },
+                    {
+                      "id": "DF.1.7.2",
+                      "name": "Divers social",
+                      "useInAnalysis": true,
+                      "formula": "DF∩(C60∪C61∪C62∪C63∪C67)∩(F4+F5)-(C6245∩F52)-(C6245∩F568)-(C6556∩F58)-(C6568∩F52)-(C6526∩F51)-(C6513∩F52)-((C65113+C6568)∩F53)-C6336-C6218-(C6245∩F51)-(C62878∩F51)-(C6184∩F51)-(C6188∩F51)-(C6227∩F51)-(C6232∩F51)-(C617∩F51)-(C6251∩F51)-(C6718∩F51)-(C62268∩F51)-(C673∩F51)-(C6234+C6135∩F51)+(C65111+C6526)∩F58+C651123∩F52+C6512∩(F58+F564)+C6514∩(F58+F53+F52+F538+F564)+C6518∩F564+((C6522+C6525)∩(F52+F538+F53))+C6541∩(F567+F52+F541+F53+F538+F41+F58)+C6542∩(F567+F538+F52+F5471+F41)+((C65661+C65662)∩(F564+F567))+C6568∩(F53+F538+F550+F42+F41+F48)+C65888∩F538-C6132∩F40-C6161∩F50-C614∩F40-(C6568∩F531+F532)-C6132∩F51-C6168∩F50-C6068∩F58-C6251∩F550-C63512∩F51-C6251∩F52-C611∩F51-(C6718∩F52∩Ann2020)-(C6188∩(F58+F50)∩Ann2020)-(C6236∩F58∩Ann2020)+(C6541∩F52∩Ann2020)+(C6541∩F550∩Ann2020)+(C6518∩F538∩Ann2020)-(C651123∩F52∩Ann2020)-(C6161∩F51∩Ann2020)"
                     }
                   ]
                 },
                 {
-                  "id": "654",
-                  "name": "Pertes sur créances irrécouvrables",
+                  "id": "DF.1.8",
+                  "name": "Conférence des financeurs",
                   "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "6541",
-                      "name": "Créances admises en non-valeur",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch65∩C6541"
-                    },
-                    {
-                      "id": "6542",
-                      "name": "Créances éteintes",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch65∩C6542"
-                    }
-                  ]
+                  "formula": "DF∩((C65113∩F53)+((C65113+C6568)∩F531)+((C65113+C6568)∩F532))"
                 },
                 {
-                  "id": "655",
-                  "name": "Contributions obligatoires",
+                  "id": "DF.1.3",
+                  "name": "Prestation Compensatoire du Handicap (PCH) + Allocation Compensatrice aux Tierces Personnes (ACTP)",
                   "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "6556",
-                      "name": "Contributions à des fonds",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch65∩C6556"
-                    },
-                    {
-                      "id": "6557",
-                      "name": "Contributions communales et intercommunales obligatoires",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch65∩C6557"
-                    },
-                    {
-                      "id": "6558",
-                      "name": "Autres contributions obligatoires",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch65∩C6558"
-                    }
-                  ]
+                  "formula": "DF∩(C6511211+C6511212+C651128+C651122)"
+                }
+              ]
+            },
+            {
+              "id": "DF.2",
+              "name": "• Dépenses de Solidarités par publics ",
+              "useInAnalysis": true,
+              "children": [
+                {
+                  "id": "DF.2.1",
+                  "name": "Personnes en difficultés",
+                  "useInAnalysis": true,
+                  "formula": "DF∩(F54+F56)-(C6568+C6513+C6336+C6245+C64)"
                 },
                 {
-                  "id": "657",
-                  "name": "Subventions",
+                  "id": "DF.2.2",
+                  "name": "Personnes handicapées",
                   "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "6573",
-                      "name": "Subventions de fonctionnement aux organismes publics",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch65∩C6573"
-                    },
-                    {
-                      "id": "6574",
-                      "name": "Subventions de fonctionnement aux personnes, aux associations et aux autres organismes de droit privé",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch65∩C6574"
-                    },
-                    {
-                      "id": "6577",
-                      "name": "Remises gracieuses",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch65∩C6577"
-                    }
-                  ]
+                  "formula": "DF∩F52-(C6568+C6513+C6336+C6245+C64)-(C6718∩F52∩Ann2020)-(C6556∩F52∩Ann2020)"
                 },
                 {
-                  "id": "658",
-                  "name": "Charges diverses de gestion courante",
+                  "id": "DF.2.3",
+                  "name": "Personnes âgées",
+                  "useInAnalysis": true,
+                  "formula": "DF∩(F53+F55)+(F538∩C6245)-(C6513+C6336+C64)"
+                },
+                {
+                  "id": "DF.2.4",
+                  "name": "Enfance",
+                  "useInAnalysis": true,
+                  "formula": "DF∩F51-C6526+((C64126+C64121)∩F50∩Ann2016)+((C64126+C64121)∩F50∩Ann2015)+((C64126+C64121)∩F50∩Ann2014)-C6574∩F51-((C6218+C65734)∩F51∩Ann2020)"
+                },
+                {
+                  "id": "DF.2.5",
+                  "name": "Autres",
+                  "useInAnalysis": true,
+                  "formula": "DF∩(F58+F50+F40+F41+F42+F48)-(C6556∩F58)-C64-C6218-C6336-C6574∩F58-C6161-C6132-C614-(C65734+C65738)∩F58\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n-((C6068+C6188)∩F58∩Ann2020)\n\n\n\n\n\n\n\n"
+                }
+              ]
+            },
+            {
+              "id": "DF.3",
+              "name": "ACTIONS D'INTERVENTION",
+              "useInAnalysis": true,
+              "children": [
+                {
+                  "id": "DF.3.1",
+                  "name": "Service Départemental d'Incendie et de Secours (SDIS)",
+                  "useInAnalysis": true,
+                  "formula": "DF∩C6553"
+                },
+                {
+                  "id": "DF.3.2",
+                  "name": "Transports",
+                  "useInAnalysis": true,
+                  "formula": "DF∩((F568∩C6245) ∪ (F8 - F8∩(C6336+C64)))-(C673∩F821∩Ann2020)-(C6743∩F823∩Ann2020)"
+                },
+                {
+                  "id": "DF.3.3",
+                  "name": "Transports des étudiants et des élèves handicapés",
+                  "useInAnalysis": true,
+                  "formula": "DF∩(C6245+C6513+C6568)∩F52-(C6568∩F52)∩(Ann2017+Ann2018+Ann2019)+(C6718∩F52∩Ann2020)-(C6568∩F52∩Ann2020)+(C673∩F821∩Ann2020)"
+                },
+                {
+                  "id": "DF.3.4",
+                  "name": "Prévention spécialisée",
+                  "useInAnalysis": true,
+                  "formula": "DF∩(C6526+C6563)∩F51"
+                },
+                {
+                  "id": "DF.3.5",
+                  "name": "Dotation de fonctionnement des collèges",
+                  "useInAnalysis": true,
+                  "formula": "DF∩(C65511+C65512)"
+                },
+                {
+                  "id": "DF.3.6",
+                  "name": "Subventions de fonctionnement",
+                  "useInAnalysis": true,
+                  "formula": "DF∩(C65731+C65732+C65733+C65734+C65735+C65736+C65737+C65738+C6574)-(C657∩F4+C657∩F5+C657∩F8)+C65734∩F51"
+                },
+                {
+                  "id": "DF.3.7",
+                  "name": "Diverses participations",
                   "useInAnalysis": true,
                   "children": [
                     {
-                      "id": "6581",
-                      "name": "Redevances pour concessions, brevets, licences, procédés, droits et valeurs similaires",
+                      "id": "DF.3.7.1",
+                      "name": "Fond social logement FSL",
                       "useInAnalysis": true,
-                      "formula": "DF∩Ch65∩C6581"
+                      "formula": "DF∩(C6556+C65561)∩F72"
                     },
                     {
-                      "id": "6583",
-                      "name": "Intérêts moratoires et pénalités sur marchés",
+                      "id": "DF.3.7.2",
+                      "name": "Bourses départementales",
                       "useInAnalysis": true,
-                      "formula": "DF∩Ch65∩C6583"
+                      "formula": "DF∩ C6513-(F52+F81)"
                     },
                     {
-                      "id": "6584",
-                      "name": "Amendes fiscales et pénales",
+                      "id": "DF.3.7.3",
+                      "name": "Participation diverses",
                       "useInAnalysis": true,
-                      "formula": "DF∩Ch65∩C6584"
-                    },
-                    {
-                      "id": "6586",
-                      "name": "Frais de fonctionnement des groupes d’élus",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch6586∩C6586"
-                    },
-                    {
-                      "id": "6588",
-                      "name": "Autres charges diverses de gestion courante",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch65∩C6588"
+                      "formula": "DF∩ ((C6512+C65568)-F5-F4-F8)+ ((C6561+C6568)-(F5+F4+F8+F91))+(C6556+C6568)∩F58+C6556∩F52"
                     }
                   ]
                 }
               ]
             },
             {
-              "id": "66",
-              "name": "Charges financières",
+              "id": "DF.4",
+              "name": "DEPENSES DE PERSONNEL",
+              "useInAnalysis": true,
+              "formula": "DF∩Ch012+(C64+C6218+C6336)∩(Ch015+Ch016+Ch017)-(C64+C6336)∩F51-(C64121+C64126)∩F50-(C6451+C6453+C6454)∩F50∩(Ann2016+Ann2015+Ann2014)"
+            },
+            {
+              "id": "DF.5",
+              "name": "PEREQUATION HORIZONTALE",
+              "useInAnalysis": true,
+              "formula": "DF∩C73914+C73926+C73913+C739261+C739262+C73928"
+            },
+            {
+              "id": "DF.6",
+              "name": "CHARGES COURANTES",
               "useInAnalysis": true,
               "children": [
                 {
-                  "id": "661",
-                  "name": "Charges d'intérêts",
+                  "id": "DF.6.1",
+                  "name": "Frais généraux",
                   "useInAnalysis": true,
-                  "formula": "DF∩Ch66∩C661"
+                  "children": [
+                    {
+                      "id": "DF.6.1.2",
+                      "name": "Prestations de services( entretien et réparation, assurances, locations, frais divers formation colloques…)",
+                      "useInAnalysis": true,
+                      "formula": "DF∩(C61-(C61∩F4)-(C61∩F5)-(C61∩F8)-(C61∩F621))+(C6132+C614)∩F40+C6161∩F50+C6161∩F51+C6168∩F50+(C6188∩(F50)∩Ann2020)+(C615221∩F621∩Ann2020)"
+                    },
+                    {
+                      "id": "DF.6.1.3",
+                      "name": "Frais divers (honoraires, conseils, reception, frais télécom, affranchissement, services bancaires…)",
+                      "useInAnalysis": true,
+                      "formula": "DF∩C62-(C62∩F4)-(C62∩F5)-(C62∩F8)-(C62∩F621)-C6218+(C6251∩F621)-(C6251∩F0202)∩(Ann2014+Ann2015+Ann2016)-(C6251∩F0202)∩(Ann2014+Ann2015+Ann2016)+C6251∩F568+C6251∩F550+C6251∩F52+C6225∩F52+C6245∩F50+C6358∩F01+(C6236∩F58∩Ann2020)+(C6283∩F621∩Ann2020)+(C6581∩(F0202+F312)∩Ann2020)-(C6245∩F50∩Ann2020)-(C6225∩F52∩Ann2020)-(C6251∩F568∩Ann2020)"
+                    },
+                    {
+                      "id": "DF.6.1.4",
+                      "name": "Autres impôts et taxes",
+                      "useInAnalysis": true,
+                      "formula": "DF∩C63-(C63∩F4)-(C63∩F5)-(C63∩F8)-(C63∩F621)-C6336-C6358∩F01"
+                    },
+                    {
+                      "id": "DF.6.1.1",
+                      "name": "Achats et fournitures",
+                      "useInAnalysis": true,
+                      "formula": "DF∩C60-(C60∩F4)-(C60∩F5)-(C60∩F8)+C60612∩F621+C60611∩F621-((C60633+C60632+C60622+C60636+C6068+C60631+C60668)∩F621)-C60613∩F621+(C6068∩F58∩Ann2020)"
+                    }
+                  ]
                 },
                 {
-                  "id": "666",
-                  "name": "Pertes de change sur créances et dettes financières",
+                  "id": "DF.6.2",
+                  "name": "Dépenses de voirie",
                   "useInAnalysis": true,
-                  "formula": "DF∩Ch66∩C666"
+                  "formula": "DF∩(C60+C61+C62+C63)∩F621-(C6251∩F621)-C6336-C6215+C6558∩F621+C673∩F621+C6718∩F621-(C60612∩F621∩Ann2020)-(C6283∩F621∩Ann2020)-(C60611∩F621∩Ann2020)+(C6747∩F621∩Ann2020)-(C615221∩F621∩Ann2020)"
                 },
                 {
-                  "id": "668",
-                  "name": "Autres charges financières",
+                  "id": "DF.6.3",
+                  "name": "Autres charges",
                   "useInAnalysis": true,
-                  "formula": "DF∩Ch66∩C668"
+                  "children": [
+                    {
+                      "id": "DF.6.3.1",
+                      "name": "Questure/indemnités des élus",
+                      "useInAnalysis": true,
+                      "formula": "DF∩ C65861+C65862+C6531+C6532+C6533+C6534+C6535+C65372"
+                    },
+                    {
+                      "id": "DF.6.3.2",
+                      "name": "Charges exceptionnelles et provisions",
+                      "useInAnalysis": true,
+                      "formula": "DF∩ (C67+C68)-(F4+F5+F8)-C6743∩F921-C673∩F621-C6718∩F621-(C6747∩F621∩Ann2020)"
+                    },
+                    {
+                      "id": "DF.6.3.3",
+                      "name": "Autres (dont budgets annexes hostens, LABO, DTM)",
+                      "useInAnalysis": true,
+                      "formula": "DF∩((C651123+C6556+C654+C6541+C6542+C6581+C65821+C65888+C65661+C7398)-(F4+F5+F8))-(C6556∩F72)-C65568∩(F91+F0202)+C6743∩F921+C651123+(C6743∩F823∩Ann2020)-(C6581∩(F0202+F312)∩Ann2020)"
+                    }
+                  ]
+                },
+                {
+                  "id": "DF.6.4",
+                  "name": "Dotations de transfert",
+                  "useInAnalysis": true,
+                  "formula": "DF∩C65542+(C656+C6568)∩F91+C6558∩F0202"
+                },
+                {
+                  "id": "DF.6.5",
+                  "name": "Reprise financière",
+                  "useInAnalysis": true,
+                  "formula": "DF∩(C73918)∩F01"
                 }
               ]
             },
             {
-              "id": "67",
-              "name": "Charges spécifiques",
+              "id": "DF.7",
+              "name": "INTERETS DES EMPRUNTS",
               "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "673",
-                  "name": "Titres annulés (sur exercices antérieurs)",
-                  "useInAnalysis": true,
-                  "formula": "DF∩Ch67∩C673"
-                }
-              ]
-            },
-            {
-              "id": "68",
-              "name": "Dotations aux provisions et dépréciations",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "681",
-                  "name": "Dotations aux amortissements, aux dépréciations et aux provisions - Charges de fonctionnement",
-                  "useInAnalysis": true,
-                  "formula": "DF∩Ch68∩C681"
-                },
-                {
-                  "id": "686",
-                  "name": "Dotations aux amortissements, aux dépréciations et aux provisions - Charges financières",
-                  "useInAnalysis": true,
-                  "formula": "DF∩Ch68∩C686"
-                }
-              ]
-            },
-            {
-              "id": "011",
-              "name": "Charges à caractère général",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "60",
-                  "name": "Achats",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "6061",
-                      "name": "Fournitures non stockables",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch011∩C6061"
-                    },
-                    {
-                      "id": "6062",
-                      "name": "Fournitures non stockées",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch011∩C6062"
-                    },
-                    {
-                      "id": "6063",
-                      "name": "Fournitures d'entretien et de petit équipement",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch011∩C6063"
-                    },
-                    {
-                      "id": "6064",
-                      "name": "Fournitures administratives",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch011∩C6064"
-                    },
-                    {
-                      "id": "6065",
-                      "name": "Livres, disques, cassettes... (bibliothèques et médiathèques)",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch011∩C6065"
-                    },
-                    {
-                      "id": "6067",
-                      "name": "Fournitures scolaires",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch011∩C6067"
-                    },
-                    {
-                      "id": "6068",
-                      "name": "Autres matières et fournitures",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch011∩C6068"
-                    }
-                  ]
-                },
-                {
-                  "id": "61",
-                  "name": "Services extérieurs",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "611",
-                      "name": "Contrats de prestations de services",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch011∩C611"
-                    },
-                    {
-                      "id": "612",
-                      "name": "Redevances de crédit-bail",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "6122",
-                          "name": "Crédit-bail mobilier",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6122"
-                        },
-                        {
-                          "id": "6125",
-                          "name": "Crédit-bail immobilier",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6125"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "613",
-                      "name": "Locations",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "6132",
-                          "name": "Locations immobilières",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6132"
-                        },
-                        {
-                          "id": "6135",
-                          "name": "Locations mobilières",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6135"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "614",
-                      "name": "Charges locatives et de copropriété",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch011∩C614"
-                    },
-                    {
-                      "id": "615",
-                      "name": "Entretien et réparations",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "6152",
-                          "name": "Entretien et réparations sur biens immobiliers",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6152"
-                        },
-                        {
-                          "id": "6155",
-                          "name": "Entretien et réparations sur biens mobiliers",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6155"
-                        },
-                        {
-                          "id": "6156",
-                          "name": "Maintenance",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6156"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "616",
-                      "name": "Primes d’assurances",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "6161",
-                          "name": "Multirisques",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6161"
-                        },
-                        {
-                          "id": "6162",
-                          "name": "Assurance obligatoire dommage-construction",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6162"
-                        },
-                        {
-                          "id": "6168",
-                          "name": "Autres",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6168"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "617",
-                      "name": "Études et recherches",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch011∩C617"
-                    },
-                    {
-                      "id": "618",
-                      "name": "Divers",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "6182",
-                          "name": "Documentation générale et technique",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6182"
-                        },
-                        {
-                          "id": "6184",
-                          "name": "Versements à des organismes de formation",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6184"
-                        },
-                        {
-                          "id": "6185",
-                          "name": "Frais de colloques et de séminaires",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6185"
-                        },
-                        {
-                          "id": "6188",
-                          "name": "Autres frais divers",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6188"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "622",
-                      "name": "Rémunérations d’intermédiaires et honoraires",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "6225",
-                          "name": "Indemnités au comptable et aux régisseurs",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6225"
-                        },
-                        {
-                          "id": "6226",
-                          "name": "Honoraires",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6226"
-                        },
-                        {
-                          "id": "6227",
-                          "name": "Frais d'actes et de contentieux",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6227"
-                        },
-                        {
-                          "id": "6228",
-                          "name": "Divers",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6228"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "623",
-                      "name": "Publicité, publications, relations publiques",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "6231",
-                          "name": "Annonces et insertions",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6231"
-                        },
-                        {
-                          "id": "6232",
-                          "name": "Fêtes et cérémonies",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6232"
-                        },
-                        {
-                          "id": "6233",
-                          "name": "Foires et expositions",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6233"
-                        },
-                        {
-                          "id": "6234",
-                          "name": "Réceptions",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6234"
-                        },
-                        {
-                          "id": "6236",
-                          "name": "Catalogues et imprimés et publications",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6236"
-                        },
-                        {
-                          "id": "6238",
-                          "name": "Divers",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6238"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "624",
-                      "name": "Transports de biens et transports collectifs",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "6241",
-                          "name": "Transports de biens",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6241"
-                        },
-                        {
-                          "id": "6245",
-                          "name": "Transports de personnes extérieures à la collectivité",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6245"
-                        },
-                        {
-                          "id": "6247",
-                          "name": "Transports collectifs du personnel",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6247"
-                        },
-                        {
-                          "id": "6248",
-                          "name": "Divers",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6248"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "625",
-                      "name": "Déplacements et missions",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "6251",
-                          "name": "Voyages, déplacements et missions",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6251"
-                        },
-                        {
-                          "id": "6255",
-                          "name": "Frais de déménagement",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6255"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "626",
-                      "name": "Frais postaux et frais de télécommunications",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "6261",
-                          "name": "Frais d'affranchissement",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6261"
-                        },
-                        {
-                          "id": "6262",
-                          "name": "Frais de télécommunications",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6262"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "627",
-                      "name": "Services bancaires et assimilés",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch011∩C627"
-                    },
-                    {
-                      "id": "628",
-                      "name": "Divers",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "6281",
-                          "name": "Concours divers (cotisations)",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6281"
-                        },
-                        {
-                          "id": "6282",
-                          "name": "Frais de gardiennage",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6282"
-                        },
-                        {
-                          "id": "6283",
-                          "name": "Frais de nettoyage des locaux",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6283"
-                        },
-                        {
-                          "id": "6284",
-                          "name": "Redevances pour services rendus",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6284"
-                        },
-                        {
-                          "id": "6287",
-                          "name": "Remboursements de frais",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6287"
-                        },
-                        {
-                          "id": "6288",
-                          "name": "Autres",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch011∩C6288"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "63",
-                  "name": "Impôts et taxes versés",
-                  "useInAnalysis": true,
-                  "formula": "DF∩Ch011∩C63"
-                }
-              ]
-            },
-            {
-              "id": "012",
-              "name": "Charges de personnel et frais assimilés",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "62",
-                  "name": "Autres services extérieurs",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "621",
-                      "name": "Personnel extérieur au service",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch012∩C621"
-                    }
-                  ]
-                },
-                {
-                  "id": "63",
-                  "name": "Impôts, taxes et versements assimilés",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "633",
-                      "name": "Impôts, taxes et versements assimilés sur rémunérations (autres organismes)",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch012∩C633"
-                    }
-                  ]
-                },
-                {
-                  "id": "64",
-                  "name": "Charges de personnel",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "641",
-                      "name": "Rémunérations du personnel",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "6411",
-                          "name": "Personnel titulaire",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch012∩C6411"
-                        },
-                        {
-                          "id": "6412",
-                          "name": "Assistantes maternelles",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch012∩C6412"
-                        },
-                        {
-                          "id": "6413",
-                          "name": "Personnel non titulaire",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch012∩C6413"
-                        },
-                        {
-                          "id": "6414",
-                          "name": "Personnel rémunéré à la vacation",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch012∩C6414"
-                        },
-                        {
-                          "id": "6417",
-                          "name": "Rémunérations des apprentis",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch012∩C6417"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "645",
-                      "name": "Charges de sécurité sociale et de prévoyance",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch012∩C645"
-                    },
-                    {
-                      "id": "647",
-                      "name": "Autres charges sociales",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "6473",
-                          "name": "Allocations de chômage",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch012∩C6473"
-                        },
-                        {
-                          "id": "6475",
-                          "name": "Médecine du travail, pharmacie",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch012∩C6475"
-                        },
-                        {
-                          "id": "6478",
-                          "name": "Autres charges sociales diverses",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch012∩C6478"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "648",
-                      "name": "Autres charges de personnel",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch012∩C648"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "014",
-              "name": "Atténuations de produits",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "70",
-                  "name": "Produits des services, du domaine et ventes diverses",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "703",
-                      "name": "Redevances et recettes d'utilisation du domaine",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "7038",
-                          "name": "Autres redevances et recettes",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch014∩C7038"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "73",
-                  "name": "Impôts et taxes",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "739",
-                      "name": "Reversements et restitutions sur impôts et taxes",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "7391",
-                          "name": "Reversements et restitutions sur fiscalité locale",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch014∩C7391"
-                        },
-                        {
-                          "id": "7392",
-                          "name": "Prélèvements pour reversements de fiscalité",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch014∩C7392"
-                        },
-                        {
-                          "id": "7398",
-                          "name": "Reversements, restitutions et prélèvements divers",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch014∩C7398"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "023",
-              "name": "Virement à la section d'investissement",
-              "useInAnalysis": true,
-              "formula": "DF∩Ch023"
-            },
-            {
-              "id": "042",
-              "name": "Opérations d'ordre de transfert entre sections",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "67",
-                  "name": "Charges spécifiques",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "675",
-                      "name": "Valeurs comptables des immobilisations cédées",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch042∩C675"
-                    },
-                    {
-                      "id": "676",
-                      "name": "Neutralisations et différences sur réalisations (positives)",
-                      "useInAnalysis": true,
-                      "formula": "DF∩Ch042∩C676"
-                    }
-                  ]
-                },
-                {
-                  "id": "68",
-                  "name": "Dotations aux amortissements, aux dépréciations et aux provisions",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "681",
-                      "name": "Dotations aux amortissements, aux dépréciations et aux provisions - Charges de fonctionnement",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "6811",
-                          "name": "Dotations aux amortissements des immobilisations incorporelles et corporelles",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch042∩C6811"
-                        },
-                        {
-                          "id": "6812",
-                          "name": "Dotations aux amortissements des charges de fonctionnement à répartir",
-                          "useInAnalysis": true,
-                          "formula": "DF∩Ch042∩C6812"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
+              "formula": "Ch66"
             }
           ]
         },
         {
-          "id": "I",
-          "name": "Investissement",
+          "id": "DI",
+          "name": "DEPENSES D'INVESTISSEMENT",
           "useInAnalysis": true,
           "children": [
             {
-              "id": "10",
-              "name": "Dotations, fonds divers et réserves",
+              "id": "DI.1",
+              "name": "•Dépenses d' Equipements Propres",
               "useInAnalysis": true,
               "children": [
                 {
-                  "id": "106",
-                  "name": "Réserves",
+                  "id": "DI.1.1",
+                  "name": "COLLEGES",
                   "useInAnalysis": true,
-                  "formula": "DI∩Ch10∩C106"
+                  "formula": "DI∩(C20+C21+C23-C204)∩F221+(C2031+C21838+C2157+C21831+C21841)∩F21-RI∩C2031"
+                },
+                {
+                  "id": "DI.1.2",
+                  "name": "ROUTES",
+                  "useInAnalysis": true,
+                  "formula": "DI∩(C20+C21+C23+C1321+C1324)∩F621+(C23153∩F18)+(C2118+C23152+C23151+C2315)∩F52-((C2111+C231318)∩F621)+(C23153∩F33)+C1322∩F821-RI∩(C1322∩F821)-RI∩(C2315+C23151)∩F52-C204182-RI∩C23153∩F18-(C1322∩F821∩Ann2018)-(C231351+C21848+C2188+C2031)∩F621-(C2118∩F621)∩(Ann2018)-C23153∩F621-C20422∩F621-C238∩F621+C2031∩(F52+F18)+C2031∩F33"
+                },
+                {
+                  "id": "DI.1.3",
+                  "name": "BATIMENTS",
+                  "useInAnalysis": true,
+                  "formula": "DI∩((C20+C21+C23+C1321+C1324)-(C20+C21+C23+C1321+C1324)∩(F221+F621+F738+F50))-((C2031+C21838)∩F21)-(C23153∩F18)+((C2111+C231318)∩F621)-(C21313∩F40)+(C2188∩F41)-C204+(C2764∩F91)-(C21831+C21841+C2157)∩F21-(C2118+C23151+C23152)∩F52-(C23153∩F33)-(C2188∩F41)+(C45441+C454418)∩F01+(C1322∩F821∩Ann2018)+(C231351∩F50)+(C2188+C231351+C21848)∩F621+(C261+C2748)∩F01+(C261∩F0202)-RI∩(C2748∩F01)+(C1311)∩F0202+C23153∩F621+C1675∩F01+(C21313+C2157)∩F50-(RI∩C231318∩F621)-C2031∩F33"
+                },
+                {
+                  "id": "DI.1.4",
+                  "name": "AMENAGEMENT",
+                  "useInAnalysis": true,
+                  "formula": "DI∩(C1311+C2031+C2111+C2157+C2182+C21848+C2312+C231351+C2314+C23152+C23153+C2051+C2188+C21838)∩F738+(C4581∩F72)+(C2031+C23188)∩F72"
+                },
+                {
+                  "id": "DI.1.5",
+                  "name": "IMMOBILIER SOCIAL",
+                  "useInAnalysis": true,
+                  "formula": "DI∩C1675+(C20+C21+C23)∩F50+C21313∩F40+C2188∩F41-(C204∩F50)-RI∩(C231313+C21313)∩F50-(C231351∩F50)-C1675∩F01-(C21313+C2157)∩F50-C2031∩F50∩Ann2020"
                 }
               ]
             },
             {
-              "id": "13",
-              "name": "Subventions d'investissement perçues - Reversements",
+              "id": "DI.EM",
+              "name": "Emprunt Remboursé",
               "useInAnalysis": true,
               "children": [
                 {
-                  "id": "131",
-                  "name": "Subventions d’investissement rattachées aux actifs amortissables",
+                  "id": "DI.EM.1",
+                  "name": "Amortissement Emprunt",
                   "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "1315",
-                      "name": "Groupements de collectivités et collectivités à statut particulier",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch13∩C1315"
-                    },
-                    {
-                      "id": "1318",
-                      "name": "Autres",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch13∩C1318"
-                    }
-                  ]
+                  "formula": "DI∩(C1641+C16311+C167+C168+C16811+C166)-C1675-C1672+C16318∩F01∩Ann2020"
                 },
                 {
-                  "id": "132",
-                  "name": "Subventions d’investissement rattachées aux actifs non amortissables",
+                  "id": "DI.EM.2",
+                  "name": "Amortissement OCLT",
                   "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "1321",
-                      "name": "Etat et établissements nationaux",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch13∩C1321"
-                    },
-                    {
-                      "id": "1322",
-                      "name": "Régions",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch13∩C1322"
-                    },
-                    {
-                      "id": "1323",
-                      "name": "Départements",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch13∩C1323"
-                    },
-                    {
-                      "id": "1324",
-                      "name": "Communes",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch13∩C1324"
-                    },
-                    {
-                      "id": "1328",
-                      "name": "1328 Autres - 020 Adm gale de la collec",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch13∩C1328"
-                    }
-                  ]
+                  "formula": "DI∩C16441"
                 },
                 {
-                  "id": "134",
-                  "name": "Fonds affectés à l’équipement non amortissable",
+                  "id": "DI.EM.3",
+                  "name": "Divers emprunts",
                   "useInAnalysis": true,
-                  "formula": "DI∩Ch13∩C134"
+                  "formula": "DI∩C1672+C165+C275-RI∩C165-RI∩C275"
                 }
               ]
             },
             {
-              "id": "16",
-              "name": "Emprunts et dettes assimilées",
+              "id": "DI.2",
+              "name": "Subventions",
               "useInAnalysis": true,
               "children": [
                 {
-                  "id": "163",
-                  "name": "Emprunts obligataires",
+                  "id": "DI.2.1",
+                  "name": "SUBVENTIONS AUX COMMUNES",
                   "useInAnalysis": true,
-                  "formula": "DI∩Ch16∩C163"
+                  "formula": "DI∩(C20414+C204141+C204142)-(C204142∩F72)"
                 },
                 {
-                  "id": "164",
-                  "name": "Emprunts auprès des établissements financiers",
+                  "id": "DI.2.2",
+                  "name": "LOGEMENT",
                   "useInAnalysis": true,
-                  "formula": "DI∩Ch16∩C164"
+                  "formula": "DI∩(C204142+C204182+C20422)∩F72"
                 },
                 {
-                  "id": "165",
-                  "name": "Dépôts et cautionnements reçus",
+                  "id": "DI.2.3",
+                  "name": "SDIS",
                   "useInAnalysis": true,
-                  "formula": "DI∩Ch16∩C165"
+                  "formula": "DI∩C2041781+DI∩C2041782∩Ann2019"
                 },
                 {
-                  "id": "166",
-                  "name": "Refinancement de dette",
+                  "id": "DI.2.4",
+                  "name": "SUBVENTIONS AUX TIERS",
                   "useInAnalysis": true,
-                  "formula": "DI∩Ch16∩C166"
+                  "formula": "DI∩C204-(C204182+C20422)∩F72-(C204182∩F68)-(C204152∩F93)-C2041781-C20414-C204141-C204142+(C2761+C1328+C13278)-RI∩(C1328+C2761+C13278)-RI∩C2748∩(F0202∪F01)+C20422∩F621-DI∩C2041782∩Ann2019"
                 },
                 {
-                  "id": "167",
-                  "name": "Emprunts et dettes assortis de conditions particulières",
+                  "id": "DI.2.5",
+                  "name": "LGV",
                   "useInAnalysis": true,
-                  "formula": "DI∩Ch16∩C167"
+                  "formula": "DI∩(C204182∩F68)"
                 },
                 {
-                  "id": "168",
-                  "name": "Autres emprunts et dettes assimilées",
+                  "id": "DI.2.6",
+                  "name": "GIRONDE NUMERIQUE",
                   "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "1681",
-                      "name": "Autres emprunts",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch16∩C1681"
-                    },
-                    {
-                      "id": "1687",
-                      "name": "Autres dettes",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch16∩C1687"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "20",
-              "name": "Dépenses d'équipement propres",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "202",
-                  "name": "Frais d’études, d’élaboration, de modifications et de révisions des documents d’urbanisme",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch20∩C202"
-                },
-                {
-                  "id": "203",
-                  "name": "Frais d’études, de recherche et de développement et frais d’insertion",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "2031",
-                      "name": "Frais d'études",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch20∩C2031"
-                    },
-                    {
-                      "id": "2032",
-                      "name": "Frais de recherche et de développement",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch20∩C2032"
-                    }
-                  ]
-                },
-                {
-                  "id": "205",
-                  "name": "Concessions et droits similaires, brevets, licences, marques, procédés, droits et valeurs similaires",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch20∩C205"
-                },
-                {
-                  "id": "208",
-                  "name": "Autres immobilisations incorporelles",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch20∩C208"
-                },
-                {
-                  "id": "211",
-                  "name": "Terrains",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch21∩C211"
-                },
-                {
-                  "id": "212",
-                  "name": "Agencements et aménagements de terrains",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch21∩C212"
-                },
-                {
-                  "id": "213",
-                  "name": "Constructions",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch21∩C213"
-                },
-                {
-                  "id": "215",
-                  "name": "Installations, matériel et outillage techniques",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch21∩C215"
-                },
-                {
-                  "id": "216",
-                  "name": "Biens historiques et culturels",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch21∩C216"
-                },
-                {
-                  "id": "217",
-                  "name": "Immobilisations reçues au titre d’une mise à disposition",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch21∩C217"
-                },
-                {
-                  "id": "218",
-                  "name": "Autres immobilisations corporelles",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch21∩C218"
-                },
-                {
-                  "id": "231",
-                  "name": "Travaux en cours (*)",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch23∩C231"
-                },
-                {
-                  "id": "238",
-                  "name": "Avances versées ",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch23∩C238"
-                }
-              ]
-            },
-            {
-              "id": "26",
-              "name": "Opérations financières hors dettes",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "246",
-                  "name": "Autres créances immobilisées",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "2764",
-                      "name": "Créances sur des particuliers, autres personnes droit privé - 020 Adm gale de la collec ",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch27∩C2764"
-                    }
-                  ]
-                },
-                {
-                  "id": "261",
-                  "name": "Titres de participation",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch26∩C261"
-                },
-                {
-                  "id": "266",
-                  "name": "266 - Autres formes de participation - 020 - Administration générale de la collectivité",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch26∩C266"
-                },
-                {
-                  "id": "269",
-                  "name": "Versements restant à effectuer sur titres de participation non libérés",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch26∩C269"
-                },
-                {
-                  "id": "274",
-                  "name": "Prêts",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch27∩C274"
-                },
-                {
-                  "id": "275",
-                  "name": "Dépôts et cautionnements versés",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch27∩C275"
-                },
-                {
-                  "id": "276",
-                  "name": "Autres créances immobilisées",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "2761",
-                      "name": "Créances pour avances en garanties d'emprunt - 01 Opé non ventil",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch27∩C2761"
-                    },
-                    {
-                      "id": "2763",
-                      "name": "Communes membres du GFP - 020 Adm gale de la collec",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch27∩C2763"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "45",
-              "name": "Opérations financières hors dettes",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "458",
-                  "name": "Opérations effectuées pour comptes de tiers",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch45∩C458"
-                }
-              ]
-            },
-            {
-              "id": "204",
-              "name": "Subventions d'équipement versées",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "2041",
-                  "name": "Subventions d’équipement aux organismes publics",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch204∩C2041"
-                },
-                {
-                  "id": "2042",
-                  "name": "Subventions d’équipement aux personnes de droit privé",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch204∩C2042"
-                },
-                {
-                  "id": "2046",
-                  "name": "Attributions de compensation d'investissement",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch204∩C2046"
-                },
-                {
-                  "id": "2324",
-                  "name": "Subventions d'équipements versées par acomptes",
-                  "useInAnalysis": true,
-                  "formula": "DI∩Ch204∩C2324"
-                }
-              ]
-            },
-            {
-              "id": "001",
-              "name": "Solde d'exécution de la section d'investissement reporté",
-              "useInAnalysis": true,
-              "formula": "DI∩Ch001"
-            },
-            {
-              "id": "040",
-              "name": "Opérations d'ordre de transfert entre sections",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "13",
-                  "name": "Subventions d'investissement",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "139",
-                      "name": "Subventions d’investissement transférées au compte de résultat",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "1391",
-                          "name": "Subventions d’investissement rattachées aux actifs amortissables (à subdiviser comme le compte 131)",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch040∩C1391"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "16",
-                  "name": "Emprunts et dettes assimilées",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "163",
-                      "name": "Emprunts obligataires",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "1631",
-                          "name": "Emprunts obligataires",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch040∩C1631"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "164",
-                      "name": "Emprunts auprès des établissements financiers",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch040∩C164"
-                    }
-                  ]
-                },
-                {
-                  "id": "19",
-                  "name": "Neutralisations et régularisations d'opérations",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "192",
-                      "name": "Plus ou moins-values sur cessions d’immobilisations",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch040∩C192"
-                    },
-                    {
-                      "id": "198",
-                      "name": "Neutralisation des amortissements",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch040∩C198"
-                    }
-                  ]
-                },
-                {
-                  "id": "21",
-                  "name": "Immobilisations corporelles",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "213",
-                      "name": "Constructions",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2131",
-                          "name": "Bâtiments publics",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch040∩C2131"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "23",
-                  "name": "Immobilisations en cours",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "231",
-                      "name": "Immobilisations corporelles en cours",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch040∩C231"
-                    }
-                  ]
-                },
-                {
-                  "id": "26",
-                  "name": "Participations et créances rattachées à des participations",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "261",
-                      "name": "Titres de participation",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch040∩C261"
-                    }
-                  ]
-                },
-                {
-                  "id": "28",
-                  "name": "Amortissements des immobilisations",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "280",
-                      "name": "Amortissements des immobilisations incorporelles",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2803",
-                          "name": "Frais d’études, de recherche et de développement et frais d’insertion",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch040∩C2803"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "281",
-                      "name": "Amortissements des immobilisations corporelles",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2815",
-                          "name": "Installations, matériel et outillage techniques",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch040∩C2815"
-                        },
-                        {
-                          "id": "2818",
-                          "name": "Autres immobilisations corporelles",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch040∩C2818"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "48",
-                  "name": "Comptes de régularisation",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "481",
-                      "name": "Charges à répartir sur plusieurs exercices",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "4815",
-                          "name": "Charges liées à la crise sanitaire Covid-19",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch040∩C4815"
-                        },
-                        {
-                          "id": "4818",
-                          "name": "Charges à étaler",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch040∩C4818"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "041",
-              "name": "Opérations patrimoniales",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "20",
-                  "name": "Immobilisations incorporelles",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "203",
-                      "name": "Frais d’études, de recherche et de développement et frais d’insertion",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2031",
-                          "name": "Frais d'études",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch041∩C2031"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "204",
-                      "name": "Subventions d’équipement versées",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2044",
-                          "name": "Subventions d’équipement en nature",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch041∩C2044"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "21",
-                  "name": "Immobilisations corporelles",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "211",
-                      "name": "Terrains",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2111",
-                          "name": "Terrains nus",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch041∩C2111"
-                        },
-                        {
-                          "id": "2113",
-                          "name": "Terrains aménagés autres que voirie",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch041∩C2113"
-                        },
-                        {
-                          "id": "2115",
-                          "name": "Terrains bâtis",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch041∩C2115"
-                        },
-                        {
-                          "id": "2117",
-                          "name": "Bois et forêts",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch041∩C2117"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "213",
-                      "name": "Constructions",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2131",
-                          "name": "Bâtiments publics",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch041∩C2131"
-                        },
-                        {
-                          "id": "2132",
-                          "name": "Bâtiments privés",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch041∩C2132"
-                        },
-                        {
-                          "id": "2138",
-                          "name": "Autres constructions",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch041∩C2138"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "218",
-                      "name": "Autres immobilisations corporelles",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2188",
-                          "name": "Autres",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch041∩C2188"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "23",
-                  "name": "Immobilisations en cours",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "231",
-                      "name": "Immobilisations corporelles en cours",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2312",
-                          "name": "Agencements et aménagements de terrains",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch041∩C2312"
-                        },
-                        {
-                          "id": "2313",
-                          "name": "Constructions",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch041∩C2313"
-                        },
-                        {
-                          "id": "2315",
-                          "name": "Installations, matériel et outillage techniques",
-                          "useInAnalysis": true,
-                          "formula": "DI∩Ch041∩C2315"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "235",
-                      "name": "Part investissement P.P.P.",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch041∩C235"
-                    },
-                    {
-                      "id": "238",
-                      "name": "Avances versées sur commandes d’immobilisations corporelles",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch041∩C238"
-                    }
-                  ]
-                },
-                {
-                  "id": "26",
-                  "name": "Participations et créances rattachées à des participations",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "261",
-                      "name": "Titres de participation",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch041∩C261"
-                    }
-                  ]
-                },
-                {
-                  "id": "27",
-                  "name": "Autres immobilisations financières",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "276",
-                      "name": "Autres créances immobilisées",
-                      "useInAnalysis": true,
-                      "formula": "DI∩Ch041∩C276"
-                    }
-                  ]
+                  "formula": "DI∩(C204152∩F93)-(DI∩(C204152∩F93)∩Ann2019)"
                 }
               ]
             }
@@ -1581,1559 +422,386 @@
     },
     {
       "id": "R",
-      "name": "Recette",
+      "name": "Recettes",
       "useInAnalysis": true,
       "children": [
         {
-          "id": "F",
-          "name": "Fonctionnement",
+          "id": "RF",
+          "name": "RECETTES DE FONCTIONNEMENT",
           "useInAnalysis": true,
           "children": [
             {
-              "id": "70",
-              "name": "Produits des services, du domaine et ventes diverses",
+              "id": "RF.7",
+              "name": "• Dispositif de compensation sociale",
               "useInAnalysis": true,
               "children": [
                 {
-                  "id": "701",
-                  "name": "Ventes de produits finis",
+                  "id": "RF.7.1",
+                  "name": "Fonds de Mobilisation Départementale pour l'Insertion (FMDI)",
                   "useInAnalysis": true,
-                  "formula": "RF∩Ch70∩C701"
+                  "formula": "RF∩(C74783)"
                 },
                 {
-                  "id": "703",
-                  "name": "Redevances et recettes d'utilisation du domaine",
+                  "id": "RF.7.2",
+                  "name": "Dotation de compensation peréquée DCP",
                   "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "7031",
-                      "name": "Concessions et redevances funéraires",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch70∩C7031"
-                    },
-                    {
-                      "id": "7032",
-                      "name": "Droits de permis de stationnement et de location sur la voie publique, les rivières, ports et quais fluviaux et autres lieux publics",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch70∩C7032"
-                    },
-                    {
-                      "id": "7038",
-                      "name": "Autres redevances et recettes",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch70∩C7038"
-                    }
-                  ]
+                  "formula": "RF∩(C73125)"
                 },
                 {
-                  "id": "704",
-                  "name": "Travaux",
+                  "id": "RF.7.3",
+                  "name": "Fonds de stabilisation",
                   "useInAnalysis": true,
-                  "formula": "RF∩Ch70∩C704"
-                },
-                {
-                  "id": "705",
-                  "name": "Études",
-                  "useInAnalysis": true,
-                  "formula": "RF∩Ch70∩C705"
-                },
-                {
-                  "id": "706",
-                  "name": "Prestations de services",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "7062",
-                      "name": "Redevances et droits des services à caractère culturel",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch70∩C7062"
-                    },
-                    {
-                      "id": "7063",
-                      "name": "Redevances et droits des services à caractère sportif et de loisirs",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch70∩C7063"
-                    },
-                    {
-                      "id": "7064",
-                      "name": "Taxes d’analyse et de désinfection",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch70∩C7064"
-                    },
-                    {
-                      "id": "7066",
-                      "name": "Redevances et droits des services à caractère social",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch70∩C7066"
-                    },
-                    {
-                      "id": "7067",
-                      "name": "Redevances et droits des services périscolaires et d'enseignement",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch70∩C7067"
-                    },
-                    {
-                      "id": "7068",
-                      "name": "Autres redevances et droits",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch70∩C7068"
-                    }
-                  ]
-                },
-                {
-                  "id": "707",
-                  "name": "Ventes de marchandises",
-                  "useInAnalysis": true,
-                  "formula": "RF∩Ch70∩C707"
-                },
-                {
-                  "id": "708",
-                  "name": "Autres produits",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "7083",
-                      "name": "Locations diverses (autres qu'immeubles)",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch70∩C7083"
-                    },
-                    {
-                      "id": "7084",
-                      "name": "Mise à disposition de personnel facturée",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch70∩C7084"
-                    },
-                    {
-                      "id": "7087",
-                      "name": "Remboursements de frais",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch70∩C7087"
-                    },
-                    {
-                      "id": "7088",
-                      "name": "Autres produits d'activités annexes (abonnements et ventes d'ouvrages...)",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch70∩C7088"
-                    }
-                  ]
+                  "formula": "RF∩ (C74788)∩F01 "
                 }
               ]
             },
             {
-              "id": "73",
-              "name": "Impôts et taxes",
+              "id": "RF.8",
+              "name": "Péréquation horizontale",
               "useInAnalysis": true,
               "children": [
                 {
-                  "id": "731",
-                  "name": "Fiscalité locale",
+                  "id": "RF.8.1",
+                  "name": "Fonds de Péréquation DMTO et Fonds de solidarité",
                   "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "7311",
-                      "name": "Contributions directes",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch731∩C7311"
-                    },
-                    {
-                      "id": "7312",
-                      "name": "Publicité foncière et droit d’enregistrement",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch731∩C7312"
-                    },
-                    {
-                      "id": "7313",
-                      "name": "Taxes liées à l’urbanisation, aux déchets et à l’environnement",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch731∩C7313"
-                    },
-                    {
-                      "id": "7314",
-                      "name": "Impôts et taxes liés à la production et à la consommation énergétiques et industrielles",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch731∩C7314"
-                    },
-                    {
-                      "id": "7315",
-                      "name": "Taxes liées aux transports, aux véhicules et aux droits de stationnement",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch731∩C7315"
-                    },
-                    {
-                      "id": "7317",
-                      "name": "Impôts et taxes spécifiques liés à des activités de services",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch731∩C7317"
-                    },
-                    {
-                      "id": "7318",
-                      "name": "Autres",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch731∩C7318"
-                    }
-                  ]
-                },
-                {
-                  "id": "732",
-                  "name": "Fiscalité reversée",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "7321",
-                      "name": "Fiscalité reversée entre collectivités locales",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch73∩C7321"
-                    }
-                  ]
+                  "formula": "RF∩(C7326+C73261+C73262)"
                 }
               ]
             },
             {
-              "id": "74",
-              "name": "Dotations et participations",
+              "id": "RF.2",
+              "name": "FISCALITE TRANSFEREE",
               "useInAnalysis": true,
               "children": [
                 {
-                  "id": "741",
-                  "name": "D.G.F.",
+                  "id": "RF.2.1",
+                  "name": "Taxe intérieure de consommation sur les produits energétiques(TICPE)",
                   "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "7411",
-                      "name": "DGF des communes et des établissements publics de coopération intercommunale (EPCI)",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch74∩C7411"
-                    },
-                    {
-                      "id": "7414",
-                      "name": "DGF des permanents syndicaux",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch74∩C7414"
-                    }
-                  ]
+                  "formula": "RF∩(C7352)"
                 },
                 {
-                  "id": "743",
-                  "name": "Dotation spéciale au titre des instituteurs (DSI)",
+                  "id": "RF.2.2",
+                  "name": "Taxe Sur les Contrats d’Assurance (TSCA)",
                   "useInAnalysis": true,
-                  "formula": "RF∩Ch74∩C743"
-                },
-                {
-                  "id": "744",
-                  "name": "FCTVA",
-                  "useInAnalysis": true,
-                  "formula": "RF∩Ch74∩C744"
-                },
-                {
-                  "id": "746",
-                  "name": "Dotation générale de décentralisation",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "7461",
-                      "name": "DGD des communes et EPCI",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch74∩C7461"
-                    }
-                  ]
-                },
-                {
-                  "id": "747",
-                  "name": "Participations",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "7471",
-                      "name": "État",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch74∩C7471"
-                    },
-                    {
-                      "id": "7472",
-                      "name": "Régions",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch74∩C7472"
-                    },
-                    {
-                      "id": "7473",
-                      "name": "Départements",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch74∩C7473"
-                    },
-                    {
-                      "id": "7474",
-                      "name": "Communes",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch74∩C7474"
-                    },
-                    {
-                      "id": "7475",
-                      "name": "Groupements de collectivités, collectivités à statut particulier et établissements publics",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch74∩C7475"
-                    },
-                    {
-                      "id": "7477",
-                      "name": "Fonds européens",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch74∩C7477"
-                    },
-                    {
-                      "id": "7478",
-                      "name": "Autres organismes",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch74∩C7478"
-                    }
-                  ]
-                },
-                {
-                  "id": "748",
-                  "name": "Compensations, attributions et autres participations",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "7482",
-                      "name": "Compensation pour perte de taxe additionnelle aux droits d'enregistrement ou la taxe de publicité foncière",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch74∩C7482"
-                    },
-                    {
-                      "id": "7483",
-                      "name": "Attributions de péréquation et de compensation",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch74∩C7483"
-                    },
-                    {
-                      "id": "7485",
-                      "name": "Dotation pour les titres sécurisés",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch74∩C7485"
-                    },
-                    {
-                      "id": "7488",
-                      "name": "Autres attributions et participations",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch74∩C7488"
-                    }
-                  ]
+                  "formula": "RF∩(C7342)"
                 }
               ]
             },
             {
-              "id": "75",
-              "name": "Autres produits de gestion courante",
+              "id": "RF.4",
+              "name": "AUTRES FISCALITES",
               "useInAnalysis": true,
               "children": [
                 {
-                  "id": "752",
-                  "name": "Revenus des immeubles",
+                  "id": "RF.4.1",
+                  "name": "Taxe d'aménagement (incluant les anciennes Taxe Départementale Espaces Naturels Sensibles (TDENS) et financement CAUE)",
                   "useInAnalysis": true,
-                  "formula": "RF∩Ch75∩C752"
+                  "formula": "RF∩(C7323 ∪ C7324+C7327)"
                 },
                 {
-                  "id": "755",
-                  "name": "Dédits et pénalités perçus",
+                  "id": "RF.4.2",
+                  "name": "Taxe sur l’électricité",
                   "useInAnalysis": true,
-                  "formula": "RF∩Ch75∩C755"
+                  "formula": "RF∩(C7351)"
                 },
                 {
-                  "id": "756",
-                  "name": "Libéralités reçues",
+                  "id": "RF.4.3",
+                  "name": "REDEVANCE DES MINES",
                   "useInAnalysis": true,
-                  "formula": "RF∩Ch75∩C756"
+                  "formula": "RF∩(C7353)"
                 },
                 {
-                  "id": "757",
-                  "name": "Subventions",
+                  "id": "RF.4.4",
+                  "name": "Autres fiscalités",
                   "useInAnalysis": true,
-                  "formula": "RF∩Ch75∩C757"
-                },
-                {
-                  "id": "758",
-                  "name": "Produits divers de gestion courante",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "7581",
-                      "name": "Redevances",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch75∩C7581"
-                    },
-                    {
-                      "id": "7584",
-                      "name": "Recouvrement sur créances admises en non valeur (*)",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch75∩C7584"
-                    },
-                    {
-                      "id": "7586",
-                      "name": "Excédents reversés par les régies à caractère industriel et commercial",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch75∩C7586"
-                    },
-                    {
-                      "id": "7588",
-                      "name": "Autres produits divers de gestion courante",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch75∩C7588"
-                    }
-                  ]
+                  "formula": "RF∩(C7362+C7388+C738)"
                 }
               ]
             },
             {
-              "id": "76",
-              "name": "Produits financiers",
+              "id": "RF.3",
+              "name": "• Droits de mutation à titre onéreux (DMTO)",
+              "useInAnalysis": true,
+              "formula": "RF∩(C7321+C7322+C7482)"
+            },
+            {
+              "id": "RF.6",
+              "name": "• Recettes sociales",
               "useInAnalysis": true,
               "children": [
                 {
-                  "id": "761",
-                  "name": "Produits de participations",
+                  "id": "RF.6.1",
+                  "name": "Indus RSA",
                   "useInAnalysis": true,
-                  "formula": "RF∩Ch76∩C761"
+                  "formula": "RF∩(C75342+C75343+C7531)"
                 },
                 {
-                  "id": "762",
-                  "name": "Produits des autres immobilisations financières",
+                  "id": "RF.6.2",
+                  "name": "Contributions de la Caisse nationale de solidarité pour l'autonomie (CNSA)",
                   "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "7623",
-                      "name": "Remboursements d’intérêts d’emprunts transférés",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch76∩C7623"
-                    }
-                  ]
+                  "formula": "RF∩(C747811+C747812)"
                 },
                 {
-                  "id": "766",
-                  "name": "Gains de change sur créances et dettes financières",
+                  "id": "RF.6.3",
+                  "name": "Recouvrements sur bénéficiaires PA/PH",
                   "useInAnalysis": true,
-                  "formula": "RF∩Ch76∩C766"
+                  "formula": "RF∩(C7513)"
                 },
                 {
-                  "id": "768",
-                  "name": "Autres produits financiers",
+                  "id": "RF.6.4",
+                  "name": "Conférence des financeurs",
                   "useInAnalysis": true,
-                  "formula": "RF∩Ch76∩C768"
+                  "formula": "RF∩(C7478141+C7478142)+(C74788)∩F53∩(Ann2016+Ann2015)"
+                },
+                {
+                  "id": "RF.6.5",
+                  "name": "Financements des SAAD",
+                  "useInAnalysis": true,
+                  "formula": "RF∩(C74788)∩F538+(C747818)∩F538\n"
+                },
+                {
+                  "id": "RF.6.6",
+                  "name": "Divers Fonds (FAPI, Fonds stratégique pauvreté...)",
+                  "useInAnalysis": true,
+                  "formula": "RF∩(C74718+C74713)∩F01"
                 }
               ]
             },
             {
-              "id": "77",
-              "name": "Produits spécifiques",
+              "id": "RF.9",
+              "name": "RECETTES DIVERSES",
               "useInAnalysis": true,
               "children": [
                 {
-                  "id": "773",
-                  "name": "Mandats annulés (sur exercices antérieurs) ou atteints par la déchéance quadriennale",
+                  "id": "RF.9.5",
+                  "name": "produits des services",
                   "useInAnalysis": true,
-                  "formula": "RF∩Ch77∩C773"
+                  "formula": "RF∩Ch70"
                 },
                 {
-                  "id": "775",
-                  "name": "Produits des cessions d'immobilisations",
+                  "id": "RF.9.1",
+                  "name": "Produits des domaines (ventes)",
                   "useInAnalysis": true,
-                  "formula": "RF∩Ch77∩C775"
-                }
-              ]
-            },
-            {
-              "id": "78",
-              "name": "Reprises sur amortissements, dépréciations et provisions",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "781",
-                  "name": "Reprises sur amortissements, dépréciations et provisions (à inscrire dans les produits de fonctionnement",
-                  "useInAnalysis": true,
-                  "formula": "RF∩Ch78∩C781"
-                }
-              ]
-            },
-            {
-              "id": "002",
-              "name": "Résultat de fonctionnement reporté",
-              "useInAnalysis": true,
-              "formula": "RF∩Ch002"
-            },
-            {
-              "id": "013",
-              "name": "Atténuations de charges",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "64",
-                  "name": "Charges de personnel",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "641",
-                      "name": "Rémunérations du personnel",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "6419",
-                          "name": "Remboursements sur rémunérations du personnel",
-                          "useInAnalysis": true,
-                          "formula": "RF∩Ch013∩C6419"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "645",
-                      "name": "Charges de sécurité sociale et de prévoyance",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "6459",
-                          "name": "Remboursement sur charges de sécurité sociale et de prévoyance",
-                          "useInAnalysis": true,
-                          "formula": "RF∩Ch013∩C6459"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "014",
-              "name": "Atténuations de produits",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "73",
-                  "name": "Impôts et taxes",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "739",
-                      "name": "Reversements et restitutions sur impôts et taxes",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "7398",
-                          "name": "Reversements, restitutions et prélèvements divers",
-                          "useInAnalysis": true,
-                          "formula": "RF∩Ch014∩C7398"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "042",
-              "name": "Opérations d'ordre de transfert entre sections",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "72",
-                  "name": "Production immobilisée",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "722",
-                      "name": "Immobilisations corporelles",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch042∩C722"
-                    }
-                  ]
+                  "formula": "RF∩C752"
                 },
                 {
-                  "id": "75",
+                  "id": "RF.9.2",
+                  "name": "Produits exceptionnels +reprise sur provisions",
+                  "useInAnalysis": true,
+                  "formula": "RF∩(C7817+C7875+C7711+C7714+C7718+C773+C7788+C7816+C7866+C7713+C7748)"
+                },
+                {
+                  "id": "RF.9.3",
+                  "name": "Dotations et participations (dont fonds européens et FCTVA)",
+                  "useInAnalysis": true,
+                  "formula": "RF∩(C7475+C7476+C74771+C74772+C74778+C74788+C74888+C74718+C7474+C7472+C7473+C7478228+C74838+C7478211)-(C74718∩F01)-(C74788∩(F538+F53+F01))"
+                },
+                {
+                  "id": "RF.9.4",
+                  "name": "restauration collège",
+                  "useInAnalysis": true,
+                  "formula": "RF∩C74881"
+                },
+                {
+                  "id": "RF.9.6",
+                  "name": "remboursement charges de personnels",
+                  "useInAnalysis": true,
+                  "formula": "RF∩(C6419+C6459+C6479)"
+                },
+                {
+                  "id": "RF.9.7",
                   "name": "Autres produits de gestion courante",
                   "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "758",
-                      "name": "Produits divers de gestion courante",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "7588",
-                          "name": "Autres produits divers de gestion courante",
-                          "useInAnalysis": true,
-                          "formula": "RF∩Ch042∩C7588"
-                        }
-                      ]
-                    }
-                  ]
+                  "formula": "RF∩(C75-C752-C7513-C75342-C75343-C7531)"
                 },
                 {
-                  "id": "77",
-                  "name": "Produits spécifiques",
+                  "id": "RF.9.8",
+                  "name": "Produits financiers",
                   "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "776",
-                      "name": "Différences sur réalisations (négatives) reprises au compte de résultat",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "7761",
-                          "name": "Différences sur réalisations (négatives) reprises au compte de résultat",
-                          "useInAnalysis": true,
-                          "formula": "RF∩Ch042∩C7761"
-                        },
-                        {
-                          "id": "7768",
-                          "name": "Neutralisation des amortissements, dépréciations et provisions",
-                          "useInAnalysis": true,
-                          "formula": "RF∩Ch042∩C7768"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "777",
-                      "name": "Recettes et quote-part des subventions d'investissement transférées au compte de résultat",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch042∩C777"
-                    }
-                  ]
+                  "formula": "RF∩Ch76"
+                }
+              ]
+            },
+            {
+              "id": "RF.5",
+              "name": "• Dotations de l’État et compensations",
+              "useInAnalysis": true,
+              "children": [
+                {
+                  "id": "RF.5.1",
+                  "name": "Dotation Globale de Fonctionnement (DGF)",
+                  "useInAnalysis": true,
+                  "formula": "RF∩(C7411+C74122+C74123)"
                 },
                 {
-                  "id": "78",
-                  "name": "Reprises sur amortissements, dépréciations et provisions",
+                  "id": "RF.5.2",
+                  "name": "Dotation Globale de Décentralisation (DGD)",
                   "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "781",
-                      "name": "Reprises sur amortissements, dépréciations et provisions (à inscrire dans les produits de fonctionnement",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch042∩C781"
-                    }
-                  ]
+                  "formula": "RF∩(C7461)"
                 },
                 {
-                  "id": "79",
-                  "name": "Transferts de charges",
+                  "id": "RF.5.3",
+                  "name": "Compensations fiscales",
                   "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "791",
-                      "name": "Transferts de charges de fonctionnement",
-                      "useInAnalysis": true,
-                      "formula": "RF∩Ch042∩C791"
-                    }
-                  ]
+                  "formula": "RF∩(C74833+C74834+C74835)"
+                },
+                {
+                  "id": "RF.5.4",
+                  "name": "Dotation de compensation de la réforme de la taxe professionnelle (DCRTP)",
+                  "useInAnalysis": true,
+                  "formula": "RF∩(C74832)"
+                },
+                {
+                  "id": "RF.5.6",
+                  "name": "Autres (FCTVA...)",
+                  "useInAnalysis": true,
+                  "formula": "RF∩(C744)"
+                },
+                {
+                  "id": "RF.5.5",
+                  "name": "Fonds National de Garantie Individuelle de Ressources (FNGIR)",
+                  "useInAnalysis": true,
+                  "formula": "RF∩(C73121)"
+                }
+              ]
+            },
+            {
+              "id": "RF.1",
+              "name": "FISCALITE DIRECTE",
+              "useInAnalysis": true,
+              "children": [
+                {
+                  "id": "RF.1.3",
+                  "name": "Imposition forfaitaire pour les entreprises de réseau (IFER)",
+                  "useInAnalysis": true,
+                  "formula": "RF∩(C73114)"
+                },
+                {
+                  "id": "RF.1.4",
+                  "name": "Reversement CVAE région",
+                  "useInAnalysis": true,
+                  "formula": "RF∩(C73123)"
+                },
+                {
+                  "id": "RF.1.2",
+                  "name": "Cotisation sur la valeur ajoutée des entreprises (CVAE)",
+                  "useInAnalysis": true,
+                  "formula": "RF∩C73112"
+                },
+                {
+                  "id": "RF.1.1",
+                  "name": "Taxes foncières sur les propriétés bâties+ rôles supplémentaires",
+                  "useInAnalysis": true,
+                  "formula": "RF∩(C73111+C7318)"
                 }
               ]
             }
           ]
         },
         {
-          "id": "I",
-          "name": "Investissement",
+          "id": "RI",
+          "name": "RECETTES D'INVESTISSEMENT",
           "useInAnalysis": true,
           "children": [
             {
-              "id": "10",
-              "name": "Dotations, fonds divers et réserves",
+              "id": "RI.1",
+              "name": "• Fonds de Compensation de la Taxe sur la Valeur Ajoutée (FCTVA)",
+              "useInAnalysis": true,
+              "formula": "RI∩C10222"
+            },
+            {
+              "id": "RI.2",
+              "name": "• Dotation Décentralisée pour l’Equipement des collèges (DDEC)",
+              "useInAnalysis": true,
+              "formula": "RI∩C1332"
+            },
+            {
+              "id": "RI.3",
+              "name": "• Dotation Globale d’Equipement (DGE) + Dotation de soutien à l'Investissement (DSID)",
+              "useInAnalysis": true,
+              "formula": "RI∩C1341+C10221+((C1336+C1346)∩F0202)"
+            },
+            {
+              "id": "RI.4",
+              "name": "Subventions",
+              "useInAnalysis": true,
+              "formula": "RI∩C13-C1332-C1341-C1335-C1345-((C1336+C1346)∩F0202)+RI∩C204151∩F71+RI∩((C204142+C204152)∩F738)"
+            },
+            {
+              "id": "RI.5",
+              "name": "Divers",
+              "useInAnalysis": true,
+              "formula": "RI∩(C204+C165+C1676+C454121+C454421+C454428+C45821+C45442+C4582)+RI∩(C20+C21+C22+C23+C26+C27)-C204151∩F71-((C204142+C204152)∩F738)+RI∩C231318∩F621"
+            },
+            {
+              "id": "RI.6",
+              "name": "Cessions",
+              "useInAnalysis": true,
+              "formula": "RF∩C775"
+            },
+            {
+              "id": "RI.7",
+              "name": "Amendes radars automatiques",
+              "useInAnalysis": true,
+              "formula": "RI∩C1335+C1345"
+            },
+            {
+              "id": "RI.EM",
+              "name": "Emprunt mobilisé",
               "useInAnalysis": true,
               "children": [
                 {
-                  "id": "102",
-                  "name": "Dotations et fonds d’investissement",
+                  "id": "RI.EM.1",
+                  "name": "EMPRUNT NOUVEAU",
                   "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "1022",
-                      "name": "Fonds d'investissement",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch10∩C1022"
-                    },
-                    {
-                      "id": "1025",
-                      "name": "Dons et legs en capital",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch10∩C1025"
-                    }
-                  ]
+                  "formula": "RI∩(C1641+C16311+C166+C16318)"
                 },
                 {
-                  "id": "106",
-                  "name": "Réserves",
+                  "id": "RI.EM.2",
+                  "name": "OCLT",
                   "useInAnalysis": true,
-                  "formula": "RI∩Ch10∩C106"
+                  "formula": "RI∩C16441"
                 }
               ]
             },
             {
-              "id": "13",
-              "name": "Subventions d'investissement",
+              "id": "RI.8",
+              "name": "Avance remboursable DMTO",
               "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "131",
-                  "name": "Subventions d’investissement rattachées aux actifs amortissables",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "1311",
-                      "name": "Etat et établissements nationaux",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch13∩C1311"
-                    },
-                    {
-                      "id": "1312",
-                      "name": "Régions",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch13∩C1312"
-                    },
-                    {
-                      "id": "1313",
-                      "name": "Départements",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch13∩C1313"
-                    },
-                    {
-                      "id": "1315",
-                      "name": "Groupements de collectivités et collectivités à statut particulier",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch13∩C1315"
-                    },
-                    {
-                      "id": "1316",
-                      "name": "Autres établissements publics locaux",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch13∩C1316"
-                    },
-                    {
-                      "id": "1317",
-                      "name": "Fonds européens",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch13∩C1317"
-                    },
-                    {
-                      "id": "1318",
-                      "name": "Autres",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch13∩C1318"
-                    }
-                  ]
-                },
-                {
-                  "id": "132",
-                  "name": "Subventions d’investissement rattachées aux actifs non amortissables",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "1321",
-                      "name": "Etat et établissements nationaux",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch13∩C1321"
-                    },
-                    {
-                      "id": "1322",
-                      "name": "Régions",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch13∩C1322"
-                    },
-                    {
-                      "id": "1323",
-                      "name": "Départements",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch13∩C1323"
-                    },
-                    {
-                      "id": "1324",
-                      "name": "Communes",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch13∩C1324"
-                    },
-                    {
-                      "id": "1325",
-                      "name": "Groupements de collectivités et collectivités à statut particulier",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch13∩C1325"
-                    },
-                    {
-                      "id": "1326",
-                      "name": "Autres établissements publics locaux",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch13∩C1326"
-                    },
-                    {
-                      "id": "1327",
-                      "name": "Fonds européens",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch13∩C1327"
-                    },
-                    {
-                      "id": "1328",
-                      "name": "Autres",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch13∩C1328"
-                    }
-                  ]
-                },
-                {
-                  "id": "133",
-                  "name": "Fonds affectés à l’équipement amortissable",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch13∩C133"
-                },
-                {
-                  "id": "134",
-                  "name": "Fonds affectés à l’équipement non amortissable",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch13∩C134"
-                }
-              ]
-            },
-            {
-              "id": "16",
-              "name": "Emprunts et dettes assimilées",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "164",
-                  "name": "Emprunts auprès des établissements financiers",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch16∩C164"
-                },
-                {
-                  "id": "165",
-                  "name": "Dépôts et cautionnements reçus",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch16∩C165"
-                },
-                {
-                  "id": "166",
-                  "name": "Refinancement de dette",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch16∩C166"
-                },
-                {
-                  "id": "168",
-                  "name": "Autres emprunts et dettes assimilées",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "1681",
-                      "name": "Autres emprunts",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch16∩C1681"
-                    },
-                    {
-                      "id": "1687",
-                      "name": "Autres dettes",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch16∩C1687"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "20",
-              "name": "Dépenses d'équipement propres",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "203",
-                  "name": "Frais d’études, de recherche et de développement et frais d’insertion",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "2031",
-                      "name": "Frais d'études",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch20∩C2031"
-                    }
-                  ]
-                },
-                {
-                  "id": "205",
-                  "name": "Concessions et droits similaires, brevets, licences, marques, procédés, droits et valeurs similaires",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch20∩C205"
-                },
-                {
-                  "id": "213",
-                  "name": "Constructions",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch21∩C213"
-                },
-                {
-                  "id": "215",
-                  "name": "Installations, matériel et outillage techniques",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch21∩C215"
-                },
-                {
-                  "id": "218",
-                  "name": "Autres immobilisations corporelles",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch21∩C218"
-                },
-                {
-                  "id": "238",
-                  "name": "Avances versées sur commandes d’immobilisations corporelles",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch23∩C238"
-                }
-              ]
-            },
-            {
-              "id": "26",
-              "name": "Opérations financières hors dettes",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "261",
-                  "name": "Titres de participation",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch26∩C261"
-                },
-                {
-                  "id": "269",
-                  "name": "Versements restant à effectuer sur titres de participation non libérés",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch26∩C269"
-                },
-                {
-                  "id": "274",
-                  "name": "Prêts",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch27∩C274"
-                },
-                {
-                  "id": "275",
-                  "name": "Dépôts et cautionnements versés",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch27∩C275"
-                },
-                {
-                  "id": "276",
-                  "name": "Autres créances immobilisées",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "2761",
-                      "name": "Créances pour avances en garanties d'emprunt - 01 Opé non ventil",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch27∩C2761"
-                    },
-                    {
-                      "id": "2762",
-                      "name": "Créances sur transfert de droits à déduction de TVA - 325 Autres équip sportif ou de loisirs",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch27∩C2762"
-                    },
-                    {
-                      "id": "2763",
-                      "name": "Communes membres du GFP - 020 Adm gale de la collec",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch27∩C2763"
-                    },
-                    {
-                      "id": "2764",
-                      "name": "Créances sur des particuliers, autres personnes droit privé - 020 Adm gale de la collec ",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch27∩C2764"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "45",
-              "name": "Opérations financières hors dettes",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "458",
-                  "name": "Opérations effectuées pour comptes de tiers",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch45∩C458"
-                }
-              ]
-            },
-            {
-              "id": "204",
-              "name": "Subventions d'équipement versées",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "2041",
-                  "name": "Subventions d’équipement aux organismes publics",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch204∩C2041"
-                },
-                {
-                  "id": "2042",
-                  "name": "Subventions d’équipement aux personnes de droit privé",
-                  "useInAnalysis": true,
-                  "formula": "RI∩Ch204∩C2042"
-                }
-              ]
-            },
-            {
-              "id": "001",
-              "name": "Solde d'exécution de la section d'investissement reporté",
-              "useInAnalysis": true,
-              "formula": "RI∩Ch001"
-            },
-            {
-              "id": "021",
-              "name": "Virement de la section de fonctionnement",
-              "useInAnalysis": true,
-              "formula": "RI∩Ch021"
-            },
-            {
-              "id": "024",
-              "name": "Produits des cessions d'immobilisations",
-              "useInAnalysis": true,
-              "formula": "RI∩Ch024"
-            },
-            {
-              "id": "040",
-              "name": "Opérations d'ordre de transfert entre sections",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "19",
-                  "name": "Neutralisations et régularisations d'opérations",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "192",
-                      "name": "Plus ou moins-values sur cessions d’immobilisations",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch040∩C192"
-                    }
-                  ]
-                },
-                {
-                  "id": "20",
-                  "name": "Immobilisations incorporelles",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "208",
-                      "name": "Autres immobilisations incorporelles",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch040∩C208"
-                    }
-                  ]
-                },
-                {
-                  "id": "21",
-                  "name": "Immobilisations corporelles",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "211",
-                      "name": "Terrains",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2111",
-                          "name": "Terrains nus",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2111"
-                        },
-                        {
-                          "id": "2113",
-                          "name": "Terrains aménagés autres que voirie",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2113"
-                        },
-                        {
-                          "id": "2115",
-                          "name": "Terrains bâtis",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2115"
-                        },
-                        {
-                          "id": "2118",
-                          "name": "Autres terrains",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2118"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "212",
-                      "name": "Agencements et aménagements de terrains",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch040∩C212"
-                    },
-                    {
-                      "id": "213",
-                      "name": "Constructions",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2131",
-                          "name": "Bâtiments publics",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2131"
-                        },
-                        {
-                          "id": "2132",
-                          "name": "Bâtiments privés",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2132"
-                        },
-                        {
-                          "id": "2138",
-                          "name": "Autres constructions",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2138"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "215",
-                      "name": "Installations, matériel et outillage techniques",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2153",
-                          "name": "Réseaux divers",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2153"
-                        },
-                        {
-                          "id": "2157",
-                          "name": "Matériel et outillage technique",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2157"
-                        },
-                        {
-                          "id": "2158",
-                          "name": "Autres installations, matériel et outillage techniques",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2158"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "218",
-                      "name": "Autres immobilisations corporelles",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2182",
-                          "name": "Matériel de transport",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2182"
-                        },
-                        {
-                          "id": "2184",
-                          "name": "Matériel de bureau et mobilier",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2184"
-                        },
-                        {
-                          "id": "2186",
-                          "name": "Cheptel",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2186"
-                        },
-                        {
-                          "id": "2188",
-                          "name": "Autres",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2188"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "26",
-                  "name": "Participations et créances rattachées à des participations",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "261",
-                      "name": "Titres de participation",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch040∩C261"
-                    }
-                  ]
-                },
-                {
-                  "id": "28",
-                  "name": "Amortissements des immobilisations",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "280",
-                      "name": "Amortissements des immobilisations incorporelles",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2802",
-                          "name": "Frais d'études, d'élaboration, de modifications et de révisions des documents d'urbanisme",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2802"
-                        },
-                        {
-                          "id": "2803",
-                          "name": "Frais d’études, de recherche et de développement et frais d’insertion",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2803"
-                        },
-                        {
-                          "id": "2804",
-                          "name": "Subventions d’équipement versées",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2804"
-                        },
-                        {
-                          "id": "2805",
-                          "name": "Concessions et droits similaires, brevets, licences, droits et valeurs similaires",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2805"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "281",
-                      "name": "Amortissements des immobilisations corporelles",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2812",
-                          "name": "Agencements et aménagements de terrains",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2812"
-                        },
-                        {
-                          "id": "2813",
-                          "name": "Constructions",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2813"
-                        },
-                        {
-                          "id": "2815",
-                          "name": "Installations, matériel et outillage techniques",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2815"
-                        },
-                        {
-                          "id": "2818",
-                          "name": "Autres immobilisations corporelles",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C2818"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "48",
-                  "name": "Comptes de régularisation",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "481",
-                      "name": "Charges à répartir sur plusieurs exercices",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "4815",
-                          "name": "Charges liées à la crise sanitaire Covid-19",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C4815"
-                        },
-                        {
-                          "id": "4818",
-                          "name": "Charges à étaler",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch040∩C4818"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "041",
-              "name": "Opérations patrimoniales",
-              "useInAnalysis": true,
-              "children": [
-                {
-                  "id": "10",
-                  "name": "Dotations, fonds divers et réserves",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "102",
-                      "name": "Dotations et fonds d’investissement",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "1025",
-                          "name": "Dons et legs en capital",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C1025"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "13",
-                  "name": "Subventions d'investissement",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "131",
-                      "name": "Subventions d’investissement rattachées aux actifs amortissables",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "1314",
-                          "name": "Communes",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C1314"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "132",
-                      "name": "Subventions d’investissement rattachées aux actifs non amortissables",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "1322",
-                          "name": "Régions",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C1322"
-                        },
-                        {
-                          "id": "1324",
-                          "name": "Communes",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C1324"
-                        },
-                        {
-                          "id": "1326",
-                          "name": "Autres établissements publics locaux",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C1326"
-                        },
-                        {
-                          "id": "1328",
-                          "name": "Autres",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C1328"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "20",
-                  "name": "Immobilisations incorporelles",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "203",
-                      "name": "Frais d’études, de recherche et de développement et frais d’insertion",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2031",
-                          "name": "Frais d'études",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C2031"
-                        },
-                        {
-                          "id": "2032",
-                          "name": "Frais de recherche et de développement",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C2032"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "204",
-                      "name": "Subventions d’équipement versées",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2044",
-                          "name": "Subventions d’équipement en nature",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C2044"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "21",
-                  "name": "Immobilisations corporelles",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "211",
-                      "name": "Terrains",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2111",
-                          "name": "Terrains nus",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C2111"
-                        },
-                        {
-                          "id": "2112",
-                          "name": "Terrains de voirie",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C2112"
-                        },
-                        {
-                          "id": "2113",
-                          "name": "Terrains aménagés autres que voirie",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C2113"
-                        },
-                        {
-                          "id": "2115",
-                          "name": "Terrains bâtis",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C2115"
-                        },
-                        {
-                          "id": "2118",
-                          "name": "Autres terrains",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C2118"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "213",
-                      "name": "Constructions",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2131",
-                          "name": "Bâtiments publics",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C2131"
-                        },
-                        {
-                          "id": "2132",
-                          "name": "Bâtiments privés",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C2132"
-                        },
-                        {
-                          "id": "2138",
-                          "name": "Autres constructions",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C2138"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "218",
-                      "name": "Autres immobilisations corporelles",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2182",
-                          "name": "Matériel de transport",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C2182"
-                        },
-                        {
-                          "id": "2183",
-                          "name": "Matériel informatique",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C2183"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "23",
-                  "name": "Immobilisations en cours",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "231",
-                      "name": "Immobilisations corporelles en cours",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "2313",
-                          "name": "Constructions",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C2313"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "238",
-                      "name": "Avances versées sur commandes d’immobilisations corporelles",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch041∩C238"
-                    }
-                  ]
-                },
-                {
-                  "id": "26",
-                  "name": "Participations et créances rattachées à des participations",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "269",
-                      "name": "Versements restant à effectuer sur titres de participation non libérés",
-                      "useInAnalysis": true,
-                      "formula": "RI∩Ch041∩C269"
-                    }
-                  ]
-                },
-                {
-                  "id": "45",
-                  "name": "Comptabilité distincte rattachée",
-                  "useInAnalysis": true,
-                  "children": [
-                    {
-                      "id": "454",
-                      "name": "Travaux effectués d’office pour le compte de tiers (à subdiviser par opération)",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "4541",
-                          "name": "Travaux exécutés d’office",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch041∩C4541"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "458",
-                      "name": "Opérations sous mandat (à subdiviser par mandat)",
-                      "useInAnalysis": true,
-                      "children": [
-                        {
-                          "id": "4582",
-                          "name": "Recettes (à subdiviser par mandat)",
-                          "useInAnalysis": true,
-                          "formula": "RI∩Ch4582∩C4582"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
+              "formula": "(C16871∩F01∩Ann2020)"
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "S",
+      "name": "Spécial",
+      "useInAnalysis": true,
+      "children": [
+        {
+          "id": "RI.EM.3",
+          "name": "Opération tirage ligne de trésorerie",
+          "useInAnalysis": true,
+          "formula": "RI∩C16449∩F01"
+        },
+        {
+          "id": "RI.8",
+          "name": "Excédents de fonctionnement",
+          "useInAnalysis": true,
+          "formula": "RI∩C1068∩F01"
+        },
+        {
+          "id": "DI.EM.3",
+          "name": "Opération tirage ligne de trésorerie",
+          "useInAnalysis": true,
+          "formula": "DI∩C16449∩F01"
+        },
+        {
+          "id": "dur",
+          "name": "Formules en dur",
+          "useInAnalysis": true,
+          "formula": "DF∩(C6451+C6453+C6454)∩F50∩Ann2014+(C6451+C6453+C6454)∩F50∩Ann2015+(C6451+C6453+C6454)∩F50∩Ann2016+(DF∩C6574∩F58)+DI∩C2031∩F621+(DI∩C2118∩F621∩Ann2018)+DF∩C65111∩F51+DF∩C6251∩F0202∩Ann2019+((C6568∩F52)∩(Ann2017+Ann2018+Ann2019))+DF∩(C65734+C65738)∩F58∩(Ann2018+Ann2019)+C6574∩F51+(DI∩C238∩F621∩Ann2019)+(DI∩(C204152∩F93)∩Ann2019)+(DI∩C238∩F621∩Ann2020)+(DF∩C6568∩F51∩Ann2020)+(DF∩C62268∩F51∩Ann2020)+(C65734∩F58∩Ann2020)+(DI∩C2031∩F50∩Ann2020)+(C6568∩F52∩Ann2020)+(C6188∩F58∩Ann2020)"
         }
       ]
     }
