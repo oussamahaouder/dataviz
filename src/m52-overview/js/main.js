@@ -336,7 +336,7 @@ fetch(urls[CORRECTIONS_AGGREGATED]).then(resp => resp.text())
 .then(csvStringToCorrections)
 .then(corrections => {
     store.dispatch({
-        type: CORRECTION_AGGREGATION_RECEIVED,
+        type: 'CORRECTION_AGGREGATION_RECEIVED',
         corrections
     });
 });
